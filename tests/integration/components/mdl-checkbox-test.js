@@ -38,8 +38,9 @@ test('it sets correct initial value', function(assert) {
 test('it changes state when value is changed', function(assert) {
   this.set('checkboxValue', false);
   this.render(hbs`{{mdl-checkbox value=checkboxValue}}`);
-  
+
   this.set('checkboxValue', true);
 
+  assert.ok(this.$().find('label').hasClass('is-upgraded'));
   assert.ok(this.$().find('label').hasClass('is-checked'));
 });

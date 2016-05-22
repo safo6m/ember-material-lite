@@ -9,6 +9,7 @@ const { deprecate, computed } = Ember;
 
 export default BaseToplevelComponent.extend(RippleSupport, ClickActionSupport, {
   tagName: 'label',
+  classNames: ['is-upgraded'],
   classNameBindings: ['value:is-checked'],
   layout,
   value: false,
