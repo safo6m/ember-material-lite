@@ -57,13 +57,5 @@ export default BaseComponent.extend({
 
   focusOut() {
     this.sendAction('focus-out');
-  },
-
-  change() {
-    this.sendAction('change')
-  },
-
-  input() {
-    this.sendAction('input')
   }
 });
