@@ -45,5 +45,25 @@ export default BaseComponent.extend({
     } else {
       mdlComponent.input_.setCustomValidity('');
     }
+  },
+
+  keyPress() {
+    this.sendAction('key-press');
+  },
+
+  focusIn() {
+    this.sendAction('focus-in');
+  },
+
+  focusOut() {
+    this.sendAction('focus-out');
+  },
+
+  change() {
+    this.sendAction('change')
+  },
+
+  input() {
+    this.sendAction('input')
   }
 });
