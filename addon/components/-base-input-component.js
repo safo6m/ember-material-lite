@@ -47,10 +47,6 @@ export default BaseComponent.extend({
     }
   },
 
-  keyPress() {
-    this.sendAction('key-press');
-  },
-
   focusIn() {
     this.sendAction('focus-in');
   },
